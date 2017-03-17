@@ -1,21 +1,22 @@
 {
-  "name": "electron-compile-universe",
+  "name": "electron-react-seed",
   "version": "1.0.0",
-  "description": "Bare-bones project to demonstrate the powers of electron-compile at GitHub Universe 2016",
+  "description": "A basic electron react start kit",
   "main": "src/app.js",
-  "author": "Machisté N. Quintana <mnquintana@users.noreply.github.com",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
-  },
-  "private": true,
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "babel-preset-es2016-node5": "^1.1.2",
-    "babel-preset-react": "^6.5.0",
-    "electron-prebuilt-compile": "^1.1.3"
+    "babel-preset-es2017-node7": "^0.5.2",
+    "babel-preset-react": "^6.23.0",
+    "electron-prebuilt-compile": "^1.6.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6"
   }
 }

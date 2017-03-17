@@ -1,20 +1,15 @@
 import React from 'react';
-import {shell} from 'electron';
 import EmojiWall from './emoji-wall';
 
 const TITLEBAR_HEIGHT = 30;
 
-export default class Main extends React.Component {
+export class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      message: 'Hello GitHub Universe!',
+      message: 'Hello!',
       welcome: true
     };
-  }
-
-  openGithub() {
-    shell.openExternal('https://github.com/mnquintana/electron-compile-universe');
   }
 
   handleClick() {
@@ -27,7 +22,11 @@ export default class Main extends React.Component {
     let img;
 
     if (this.state.welcome) {
-      img = <img src="../assets/images/electron.svg" alt="" width="128px" ref="mainImg" />;
+      img =
+        <div>
+          <img src="../assets/images/electron.svg" alt="" width="128px" ref="electronImg" />
+          <img src="../assets/images/react.ico" alt="" width="128px" ref="reactImg" />
+        </div>;
     } else {
       img = <EmojiWall />;
     }
@@ -40,11 +39,6 @@ export default class Main extends React.Component {
 
         {img}
 
-        <footer>
-          <p>
-            Provided by <a href="#" onClick={this.openGithub.bind(this)}>electron-compile-universe</a>
-          </p>
-        </footer>
       </div>
     );
   }

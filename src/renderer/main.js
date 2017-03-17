@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/main';
+import { AppContainer } from 'react-hot-loader';
 
-ReactDOM.render(<Main />, document.getElementById('app'));
+const render = () => {
+  const Main = require('./components/main').Main;
+  ReactDOM.render(<AppContainer><Main/></AppContainer>, document.getElementById('app'));
+}
+
+render();
+if (module.hot) { module.hot.accept(render); }
