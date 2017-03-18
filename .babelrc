@@ -1,0 +1,22 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "es2017-node7",
+        "react"
+      ],
+      "plugins": [
+        "react-hot-loader/babel",
+        "transform-async-to-generator"
+      ],
+      "sourceMaps": "inline"
+    },
+    "production": {
+      "presets": [
+        "es2017-node7",
+        "react"
+      ],
+      "sourceMaps": false
+    }
+  }
+}
