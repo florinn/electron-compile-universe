@@ -4,6 +4,7 @@ This is a bare-bones example of an [Electron](https://electron.atom.io/) with [R
 
 * [electron-compile](https://github.com/electron/electron-compile)
 * [React Hot Module Loading](https://github.com/gaearon/react-hot-loader)
+* [React Developer Tools](https://github.com/facebook/react-devtools)
 * [JS Linting](https://github.com/babel/babel-eslint)
 
 ## Install
