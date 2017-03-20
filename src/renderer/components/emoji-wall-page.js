@@ -1,11 +1,12 @@
 import React from 'react';
 
-export default class EmojiWall extends React.Component {
+export default class EmojiWallPage extends React.Component {
   constructor() {
     super();
     this.state = {
       backgroundImage: null
-    }
+    };
+    this.handleDrag = this.handleDrag.bind(this);
   }
 
   async componentDidMount() {
@@ -23,7 +24,7 @@ export default class EmojiWall extends React.Component {
   render() {
     return (
       <div className="emoji-wall">
-        <img onDrag={this.handleDrag.bind(this)} src={this.state.backgroundImage} alt="Wall of emoji" width="580px"></img>
+        <img onDrag={this.handleDrag} src={this.state.backgroundImage} alt="Wall of emoji" width="580px" />
       </div>
     );
   }
